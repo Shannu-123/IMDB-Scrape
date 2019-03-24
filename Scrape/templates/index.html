@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/homepage.css') }}" />
+</head>
+<body>
+    <div class="cont">
+    <h1 class="items">TOP MOVIES</h1>
+
+        <form class="items" method="GET" action="{{url_for('search')}}">
+            <p style="font-size:18px;">Select Genere</p>
+            <select name="genre">
+                <option>---------</option>
+                <option>Action</option>
+                <option>Adventure</option>
+                <option>Crime</option>
+                <option>Romance</option>
+                <option>Drama</option>
+                <option>Comedy</option>
+                <option>Fantasy</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+</div>
+
+</body>
+</html>
